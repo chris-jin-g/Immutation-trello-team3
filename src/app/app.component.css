@@ -1,0 +1,132 @@
+#logo_svg{
+	width: 120px;
+	height: auto;
+	display: inline;
+}
+
+.nav {
+	height: 60px;
+	display: block;
+}
+
+.nav img {
+	margin-top: 10px;
+	align-content: center;
+}
+.header.fixed{
+	background-color: #0079bf;
+	width: 100%;
+	height: 60px;
+}
+
+.col-lg-5 {
+	padding-top: 50px;
+}
+
+.navbar {
+	display: inline;
+	float: right;
+	margin-right: 10px;
+	height: 50px;
+	padding-top: 10px;
+} 
+.navbar a.btn-white {
+	background-color: white;
+	vertical-align: center;
+}
+h1 {
+	margin-bottom: .5rem;
+    font-family: "Charlie Display",sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+div#hero {
+	padding-bottom: 20px;
+	height: auto;
+	background: linear-gradient(135deg, #0079bf, #5067c5);
+}
+
+div#hero p {
+	font-size:  1.5625rem;
+}
+
+.quick-signup input{
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 5;
+    -webkit-flex-grow: 5;
+    -ms-flex-positive: 5;
+    flex-grow: 5;
+    min-width: 0;
+    width: 376px;
+    border-radius: .3rem;
+    line-height: 43px;
+    padding: 4px;
+    padding-left: 16px;
+    border-color: white;
+    border-style: solid;
+}
+.quick-signup {
+	margin-top: 100px;
+	display: inline;
+}
+.quick-signup input{
+	margin-right: 10px;
+	display: inline;
+}
+.quick-signup button{
+	display: inline;
+}
+@media screen and (max-width: 990px) {
+	.md-screen {
+		-webkit-order: 1;
+		display: flex;
+	}
+	#hero .col-lg-6.offset-lg-1 {
+    	order: 3;
+	}
+	#hero .quick-signup {
+		margin: auto;
+		order: 2;
+	}
+
+	#hero .quick-signup input {
+		display: none;
+	}
+	#hero .quick-signup button {
+		text-align: center;
+	}
+	#hero .col-lg-5 {
+		order: 1;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.sm-screen {
+		display: flex !important;
+		margin: auto;
+	}
+	.sm-align {
+		text-align: center;
+	}
+	.sm-input {
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.hide-input {
+		display: none;
+	}
+	.sm-margin {
+		margin: auto;
+	}
+}
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+	width: 582px;
+}
