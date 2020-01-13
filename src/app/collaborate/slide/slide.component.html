@@ -1,7 +1,4 @@
 
-<img src="assets/landingpage/robot.png" style="width: 100px; height: 100px;" [@divState] = "state">	
-<button class="btn btn-primary" (click)= "onAnimate()" >Switch</button>
-
 <div class="Slide">
 				<div  class="container text-align">
 					<div class="row">
@@ -16,12 +13,12 @@
 					</div>
 					<div class="slide-bar" >
 						<a class="arrow-left lg-left-block md-left-block sm-left-block hidden-block">
-							<img src="assets/landingpage/left-slide.svg" />
+							<img src="assets/landingpage/left-slide.svg" (click)="onCreateAnimation(2)"/>
 						</a>
 						<a class="arrow-right lg-right-block md-right-block sm-right-block hidden-block">
-							<img src="assets/landingpage/right.svg" (click)="onCreateAnimation()" />
+							<img src="assets/landingpage/right.svg" (click)="onCreateAnimation(1)" />
 						</a>
-						<div class="board" *ngIf="stateAnimation ==1">				
+						<div class="board">				
 							<div class="slide-header">
 								<div class="slide-title">
 									<h3>
@@ -36,68 +33,68 @@
 							</div>
 							
 							<div class="lists">
-								<div class="list to-do">
-									<div class="list-content">
-										<h5>
+								<div class="list to-do" [@divState1]="state1">
+									<div class="list-content" [@divState2]="state2">
+										<h5 [@divState2]="state2">
 											To Do
 										</h5>
-										<div class="card">
+										<div class="card" [@divState3]="state3">
 											<div class="card-content">Hire Accountant</div>
 										</div>
-										<div class="card">
+										<div class="card" [@divState3]="state3">
 											<div class="card-content">Apply for Loan</div>
 										</div>
-										<div class="add-card" >
+										<div class="add-card" [@divState2]="state2">
 											Add a card…
 										</div>
 									</div>
 								</div>
-								<div class="list">
-									<div class="list-content">
-										<h5 >
+								<div class="list" [@divState2]="state2">
+									<div class="list-content" [@divState2]="state2">
+										<h5 [@divState2]="state2">
 											Doing
 										</h5>
-										<div class="card">
+										<div class="card" [@divState2]="state2">
 											<div class="card-content">Create Facebook Page</div>
 										</div>
-										<div class="card empty" ></div>
-										<div id="motion" class="card" >
+										<div class="card empty" [@divState5]="state5"></div>
+										<div id="motion" class="card" [@divState3]="state3">
 											<div class="card-content">Build Website</div>
 										</div>
-										<div class="card" >
+										<div class="card" [@divState3]="state3">
 											<div class="card-content">Design Logo</div>
 										</div>
-										<div class="card" >
+										<div class="card" [@divState3]="state3">
 											<div class="card-content">Sign Office Lease</div>
 										</div>
-										<div class="add-card" >
+										<div class="add-card" [@divState2]="state2">
 											Add a card…
 										</div>
 									</div>
 								</div>
-								<div class="list" >
-									<div class="list-content" >
-										<h5 >
+								<div class="list" [@divState2]="state2">
+									<div class="list-content" [@divState2]="state2">
+										<h5 [@divState2]="state2">
 											Done
 										</h5>
-										<div class="card empty"></div>
-										<div class="card">
+										<div class="card empty" [@divState5]="state5"></div>
+										<div class="card" [@divState3]="state3">
 											<div class="card-content">Open Bank Account</div>
 										</div>
-										<div class="card" >
+										<div class="card" [@divState3]="state3">
 											<div class="card-content">Write Business Plan</div>
 										</div>
-										<div class="add-card" >
+										<div class="add-card" [@divState2]="state2">
 											Add a card…
 										</div>
 									</div>
 								</div>
-								<div id="list-add" class="list-add" >
-									<div id="add-list" class="add-list" >Add a list…</div>
+								<div id="list-add" class="list-add" [@divState1]="state1">
+									<div id="add-list" class="add-list" [@divState1]="state1">Add a list…</div>
 								</div>
 							</div>
 							
-							<div class="card-back-overlay" >
+							<div class="card-back-overlay" [@divState4]="state4">
 								<div class="card-back">
 									<h5>
 										Build Website
@@ -168,7 +165,9 @@
 								</div>
 							</div>
 						</div>
-						<div id="robot" class="robot-visibility"></div>
+						<div id="robot" class="robot-visibility" [@divState] ="state">
+								
+						</div>
 					</div>
 				</div>
 			</div>
