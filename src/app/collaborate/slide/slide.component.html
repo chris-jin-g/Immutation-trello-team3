@@ -1,173 +1,173 @@
 
 <div class="Slide">
-				<div  class="container text-align">
-					<div class="row">
-						<div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12">
-							<h3>
-								See how it works
-							</h3>
-							<p>
-								Go from idea to action in seconds with Trello’s intuitively simple boards, lists, and cards.
-							</p>
+	<div  class="container text-align">
+		<div class="row">
+			<div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12">
+				<h3>
+					See how it works
+				</h3>
+				<p>
+					Go from idea to action in seconds with Trello’s intuitively simple boards, lists, and cards.
+				</p>
+			</div>
+		</div>
+		<div class="slide-bar" >
+			<a class="arrow-left lg-left-block md-left-block sm-left-block hidden-block">
+				<img src="assets/landingpage/left-slide.svg" (click)="onCreateAnimation(2)"/>
+			</a>
+			<a class="arrow-right lg-right-block md-right-block sm-right-block hidden-block">
+				<img src="assets/landingpage/right.svg" (click)="onCreateAnimation(1)" />
+			</a>
+			<div class="board">				
+				<div class="slide-header">
+					<div class="slide-title">
+						<h3>
+							Business Launch
+						</h3>
+					</div>
+					<div class="board-users" >
+						<div id="user-3" class="user user-3"></div>
+						<div class="user user-1"></div>
+						<div class="user user-2"></div>
+					</div>
+				</div>
+				
+				<div class="lists">
+					<div class="list to-do" [@divState1]="state1">
+						<div class="list-content" [@divState2]="state2">
+							<h5 [@divState2]="state2">
+								To Do
+							</h5>
+							<div class="card" [@divState3]="state3">
+								<div class="card-content">Hire Accountant</div>
+							</div>
+							<div class="card" [@divState3]="state3">
+								<div class="card-content">Apply for Loan</div>
+							</div>
+							<div class="add-card" [@divState2]="state2">
+								Add a card…
+							</div>
 						</div>
 					</div>
-					<div class="slide-bar" >
-						<a class="arrow-left lg-left-block md-left-block sm-left-block hidden-block">
-							<img src="assets/landingpage/left-slide.svg" (click)="onCreateAnimation(2)"/>
-						</a>
-						<a class="arrow-right lg-right-block md-right-block sm-right-block hidden-block">
-							<img src="assets/landingpage/right.svg" (click)="onCreateAnimation(1)" />
-						</a>
-						<div class="board">				
-							<div class="slide-header">
-								<div class="slide-title">
-									<h3>
-										Business Launch
-									</h3>
-								</div>
-								<div class="board-users" >
-									<div id="user-3" class="user user-3"></div>
-									<div class="user user-1"></div>
-									<div class="user user-2"></div>
-								</div>
+					<div class="list" [@divState2]="state2">
+						<div class="list-content" [@divState2]="state2">
+							<h5 [@divState2]="state2">
+								Doing
+							</h5>
+							<div class="card" [@divState2]="state2">
+								<div class="card-content">Create Facebook Page</div>
 							</div>
-							
-							<div class="lists">
-								<div class="list to-do" [@divState1]="state1">
-									<div class="list-content" [@divState2]="state2">
-										<h5 [@divState2]="state2">
-											To Do
-										</h5>
-										<div class="card" [@divState3]="state3">
-											<div class="card-content">Hire Accountant</div>
-										</div>
-										<div class="card" [@divState3]="state3">
-											<div class="card-content">Apply for Loan</div>
-										</div>
-										<div class="add-card" [@divState2]="state2">
-											Add a card…
-										</div>
-									</div>
-								</div>
-								<div class="list" [@divState2]="state2">
-									<div class="list-content" [@divState2]="state2">
-										<h5 [@divState2]="state2">
-											Doing
-										</h5>
-										<div class="card" [@divState2]="state2">
-											<div class="card-content">Create Facebook Page</div>
-										</div>
-										<div class="card empty" [@divState5]="state5"></div>
-										<div id="motion" class="card" [@divState3]="state3">
-											<div class="card-content">Build Website</div>
-										</div>
-										<div class="card" [@divState3]="state3">
-											<div class="card-content">Design Logo</div>
-										</div>
-										<div class="card" [@divState3]="state3">
-											<div class="card-content">Sign Office Lease</div>
-										</div>
-										<div class="add-card" [@divState2]="state2">
-											Add a card…
-										</div>
-									</div>
-								</div>
-								<div class="list" [@divState2]="state2">
-									<div class="list-content" [@divState2]="state2">
-										<h5 [@divState2]="state2">
-											Done
-										</h5>
-										<div class="card empty" [@divState5]="state5"></div>
-										<div class="card" [@divState3]="state3">
-											<div class="card-content">Open Bank Account</div>
-										</div>
-										<div class="card" [@divState3]="state3">
-											<div class="card-content">Write Business Plan</div>
-										</div>
-										<div class="add-card" [@divState2]="state2">
-											Add a card…
-										</div>
-									</div>
-								</div>
-								<div id="list-add" class="list-add" [@divState1]="state1">
-									<div id="add-list" class="add-list" [@divState1]="state1">Add a list…</div>
-								</div>
+							<div class="card empty" [@divState5]="state5"></div>
+							<div id="motion" class="card" [@divState3]="state3">
+								<div class="card-content">Build Website</div>
 							</div>
-							
-							<div class="card-back-overlay" [@divState4]="state4">
-								<div class="card-back">
-									<h5>
-										Build Website
-									</h5>
-									<div class="meta">
-										<div class="members">
-											<div class="spacing-div">Members</div>
-											<div class="user user-2" ></div>
-											<div class="user user-1"></div>
-										</div>
-										<div class="due-date">
-											<div class="spacing-div">Due Date</div>
-											<span class="due">
-												<img src="assets/landingpage/check.svg" alt="Check" />
-												Jul 24
-											</span>
-										</div>
-									</div>
-									<h6>
-										Description
-									</h6>
-									<p>
-										Create a nice, modern website for our new business.
-									</p>
-									<h6>
-										Checklist
-									</h6>
-									<div class="checklist">
-										<div class="progress-div">
-											<span>
-												100% Complete
-											</span>
-											<span class="progress-bar"></span>
-										</div>
-										<ul>
-											<li>
-												<img src="assets/landingpage/check1.svg" />	
-												Find WordPress template that suits our needs
-											</li>
-											<li>
-												<img src="assets/landingpage/check1.svg" />
-												<strong>@stevethedev</strong>
-												to set up and customize the template
-											</li>
-											<li>
-												<img src="assets/landingpage/check1.svg" />
-												Launch our website!
-											</li>
-										</ul>
-									</div>
-									<h6>
-										Add Comment
-									</h6>
-									<textarea></textarea>
-								</div>
+							<div class="card" [@divState3]="state3">
+								<div class="card-content">Design Logo</div>
 							</div>
-							
-							<div class="captions">
-								<div class="caption caption1">
-									
-								</div>
-								<div class="nav" >
-									<a class="step-1"></a>
-									<a class="step-2"></a>
-									<a class="step-3"></a>
-									<a class="step-4"></a>
-									<a class="step-5"></a>
-								</div>
+							<div class="card" [@divState3]="state3">
+								<div class="card-content">Sign Office Lease</div>
+							</div>
+							<div class="add-card" [@divState2]="state2">
+								Add a card…
 							</div>
 						</div>
-						<div id="robot" class="robot-visibility" [@divState] ="state">
-								
+					</div>
+					<div class="list" [@divState2]="state2">
+						<div class="list-content" [@divState2]="state2">
+							<h5 [@divState2]="state2">
+								Done
+							</h5>
+							<div class="card empty" [@divState5]="state5"></div>
+							<div class="card" [@divState3]="state3">
+								<div class="card-content">Open Bank Account</div>
+							</div>
+							<div class="card" [@divState3]="state3">
+								<div class="card-content">Write Business Plan</div>
+							</div>
+							<div class="add-card" [@divState2]="state2">
+								Add a card…
+							</div>
 						</div>
+					</div>
+					<div id="list-add" class="list-add" [@divState1]="state1">
+						<div id="add-list" class="add-list" [@divState1]="state1">Add a list…</div>
+					</div>
+				</div>
+				
+				<div class="card-back-overlay" [@divState4]="state4">
+					<div class="card-back">
+						<h5>
+							Build Website
+						</h5>
+						<div class="meta">
+							<div class="members">
+								<div class="spacing-div">Members</div>
+								<div class="user user-2" ></div>
+								<div class="user user-1"></div>
+							</div>
+							<div class="due-date">
+								<div class="spacing-div">Due Date</div>
+								<span class="due">
+									<img src="assets/landingpage/check.svg" alt="Check" />
+									Jul 24
+								</span>
+							</div>
+						</div>
+						<h6>
+							Description
+						</h6>
+						<p>
+							Create a nice, modern website for our new business.
+						</p>
+						<h6>
+							Checklist
+						</h6>
+						<div class="checklist">
+							<div class="progress-div">
+								<span>
+									100% Complete
+								</span>
+								<span class="progress-bar"></span>
+							</div>
+							<ul>
+								<li>
+									<img src="assets/landingpage/check1.svg" />	
+									Find WordPress template that suits our needs
+								</li>
+								<li>
+									<img src="assets/landingpage/check1.svg" />
+									<strong>@stevethedev</strong>
+									to set up and customize the template
+								</li>
+								<li>
+									<img src="assets/landingpage/check1.svg" />
+									Launch our website!
+								</li>
+							</ul>
+						</div>
+						<h6>
+							Add Comment
+						</h6>
+						<textarea></textarea>
+					</div>
+				</div>
+				
+				<div class="captions">
+					<div class="caption caption1">
+						
+					</div>
+					<div class="nav" >
+						<a class="step-1"></a>
+						<a class="step-2"></a>
+						<a class="step-3"></a>
+						<a class="step-4"></a>
+						<a class="step-5"></a>
 					</div>
 				</div>
 			</div>
+			<div id="robot" class="robot-visibility" [@divState] ="state">
+					
+			</div>
+		</div>
+	</div>
+</div>
