@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from "@angular/forms";
 
+import { AuthService } from "../auth.service"
+
 @Component({
   selector: 'app-signin',
   templateUrl: './signin.component.html',
@@ -8,10 +10,15 @@ import { NgForm } from "@angular/forms";
 })
 export class SigninComponent implements OnInit {
 
-  constructor() { }
+  constructor(public authService: AuthService) { }
 
   onLogin(form: NgForm) {
-  	console.log(form.value);
+  	console.log("qqq");
+  	if(form.invalid) {
+  		console.log("ss");
+  		return;
+  	}
+  	this.authService.login(form.value.email, form.value.password);
   }
 
   ngOnInit() {

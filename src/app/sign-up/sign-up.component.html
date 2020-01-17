@@ -25,7 +25,7 @@
 						
 						<div class="sign-up-container">
 							
-							<form (submit)="onSignup(signupForm)" #signupForm="ngForm">
+							<form (submit)="onSignup(signupForm)"  #signupForm="ngForm">
 								<input  type="email" name="email" ngModel #emailInput="ngModel" id="user" class="form-field" autocorrect="off" spellcheck="false" autocapitalize="off" autofocus="autofocus" placeholder="Enter email" />
 								<input  type="password" name="password"  class="form-field" autocorrect="off" spellcheck="false" autocapitalize="off" autofocus="autofocus" ngModel #passwordInput="ngModel"placeholder="Enter email" />
 								

@@ -1,10 +1,14 @@
-const express = require("express");
-const mongoose = require('mongoose');
+const express = require('express');
 const bodyParser = require("body-parser");
-
-
+const cors = require('cors');
+const mongoose = require('mongoose');
+const userRouter = require('./routes/user');
 const app = express();
 
+app.use(cors());
+app.use(express.json());
+
+const uri = process.env.ATLAS_URI;
 mongoose.connect("mongodb+srv://jeff:UhlYeefWLmMmBQ1a@cluster0-vi8kl.mongodb.net/test?retryWrites=true&w=majority").then(() => {
 	console.log("connection success");
 })
@@ -13,6 +17,10 @@ mongoose.connect("mongodb+srv://jeff:UhlYeefWLmMmBQ1a@cluster0-vi8kl.mongodb.net
 });
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false}));
 
+// user route
+
+
+app.use('/api/user', userRouter);
 module.exports = app;
+

@@ -18,6 +18,10 @@ import { SigninComponent } from './signin/signin.component';
 import { RouterModule} from "@angular/router";
 import { HeaderpartComponent } from './collaborate/headerpart/headerpart.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { HttpClientModule, HttpClient } from "@angular/common/http";
+import { BoardsComponent } from './boards/boards.component';
+import { NavbarComponent } from './boards/navbar/navbar.component';
+
 
 @NgModule({
   declarations: [
@@ -34,13 +38,16 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     FooterComponent,
     SigninComponent,
     HeaderpartComponent,
-    SignUpComponent
+    SignUpComponent,
+    BoardsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
         {path:'', component: CollaborateComponent},
         {path:'login', component: SigninComponent},
@@ -48,7 +55,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
         {path: "**", redirectTo: "/"}
       ])
   ],
-  providers: [],
+  providers: [HttpClientModule,NgModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
