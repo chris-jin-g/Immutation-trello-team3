@@ -52,6 +52,7 @@ import { NavbarComponent } from './boards/navbar/navbar.component';
         {path:'', component: CollaborateComponent},
         {path:'login', component: SigninComponent},
         {path:'sign-up', component: SignUpComponent},
+        {path: 'boards', component: BoardsComponent},
         {path: "**", redirectTo: "/"}
       ])
   ],
