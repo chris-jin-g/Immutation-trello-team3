@@ -21,6 +21,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { BoardsComponent } from './boards/boards.component';
 import { NavbarComponent } from './boards/navbar/navbar.component';
+import { SidenavComponent } from './boards/sidenav/sidenav.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { NavbarComponent } from './boards/navbar/navbar.component';
     HeaderpartComponent,
     SignUpComponent,
     BoardsComponent,
-    NavbarComponent
+    NavbarComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,

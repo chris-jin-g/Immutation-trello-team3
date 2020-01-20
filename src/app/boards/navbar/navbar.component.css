@@ -32,7 +32,7 @@ div {
 }
 .home_pic:before {
     color: white;
-    font-size: 20px;
+    font-size: 17px;
 	font-family: FontAwesome;
     content:"\f015";
 }
@@ -62,4 +62,243 @@ div {
 .home_pic {
     margin-left: 6px;
     margin-right: 6px;
+}
+.board_button {
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+    text-decoration: none;
+    align-items: center;
+    background-color: hsla(0,0%,100%,.3);
+    box-shadow: none;
+    color: #fff;
+    display: flex;
+    font-weight: 700;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 4px 0 0;
+    padding: 0;
+    transition: .1s ease;
+    white-space: nowrap;
+}
+.board_span {
+    padding-top: 6px;
+    color: #fff!important;
+    font-size: 20px;
+    height: 32px;
+    line-height: 32px;
+    width: 32px;
+    display: inline-block;
+    font-family: trellicons;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: bottom;
+}
+
+.board_span:before {
+    color: white;
+    font-size: 15px;
+    font-family: FontAwesome;
+    content: "\f181";
+}
+.search_bar {
+    background: transparent;
+        position: relative;
+
+}
+
+.search_input {
+    
+ background-color: hsla(0,0%,100%,.3);
+     background-color: hsla(0,0%,100%,.3);
+    border-radius: 3px;
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: hsla(0,0%,100%,.5);
+    float: left;
+    font-size: 13px;
+    height: 32px;
+    line-height: 19px;
+    margin: 0;
+    outline: none;
+    padding-left: 8px;
+    padding-right: 30px;
+    transition: width .15s;
+    width: 180px;
+}
+
+.span_search {
+    margin-top: 3px;
+        color: #fff;
+    position: absolute;
+    right: 5px;
+}
+.span_search_icon:before {
+    color: white;
+    font-size: 15px;
+    font-family: FontAwesome;
+    content: "\f002";  
+}
+.span_img {
+    background-image: url('/assets/landingpage/logo.svg');
+    background-size: 18px 18px;
+    display: inline-block;
+    opacity: 0;
+    height: 18px;
+    right: 59px;
+    position: absolute;
+    top: 6px;
+    width: 18px;
+}
+.span_img_next {
+    opacity: .5;
+    background-image: url('/assets/landingpage/logo.svg');
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: 80px 30px;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    width: 80px;
+}
+.trello_img_link {
+    display: block;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 5px;
+}
+.span_div {
+    color: #fff;
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 10px;
+    opacity: .5;
+    text-align: center;
+    text-transform: uppercase;
+}
+.rest_half {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+.btn_create {
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+    text-decoration: none;
+    align-items: center;
+    background-color: hsla(0,0%,100%,.3);
+    box-shadow: none;
+    color: #fff;
+    display: flex;
+    font-weight: 700;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 4px 0 0;
+    padding: 0;
+    transition: .1s ease;
+    white-space: nowrap;
+}
+.notification {
+    display: flex; 
+}
+
+
+.span_sam {
+    height: 32px;
+    line-height: 32px;
+    width: 32px;
+
+}
+.span_sam:before {
+    color: white;
+    font-size: 17px;
+    font-family: FontAwesome;
+    content:"\f067";
+}
+.span_noti:before {
+    color: white;
+    font-size: 17px;
+    font-family: FontAwesome;
+    content:"\f05a";
+}
+.span_alarm:before {
+    color: white;
+    font-size: 17px;
+    font-family: FontAwesome;
+    content:"\f0a2";
+}
+.userinfo {
+    position: relative;
+    line-height: 10px;
+    overflow: hidden;
+    white-space: nowrap;    
+}
+.span_last {
+    align-items: center;
+    background-color: #dfe1e6;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+    border-radius: 100%;
+    box-sizing: border-box;
+    color: #172b4d;
+    display: inline-flex;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 28px;
+    opacity: 1;
+    height: 28px;
+    width: 28px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.board_letter {
+    margin-right: 3px;
+}
+.square_div {
+    position: relative;
+    line-height: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.btn_inf {
+        border: none;
+    box-shadow: none;
+    color: #172b4d;
+    background-color: transparent;
+    display: block;
+    height: 32px;
+    margin-right: 0;
+    position: relative;
+    width: 32px;
+    outline: 0;
+        border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+    text-decoration: none;
+    align-items: center;
+    background-color: hsla(0,0%,100%,.3);
+    box-shadow: none;
+    color: #fff;
+    display: flex;
+    font-weight: 700;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 4px 0 0;
+    padding: 0;
+    transition: .1s ease;
+    white-space: nowrap;
 }
