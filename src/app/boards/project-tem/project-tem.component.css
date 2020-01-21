@@ -1,0 +1,60 @@
+.boards-page {
+	display: inline-flex;
+	width: 30%;
+	margin-right: 15px;	
+	height: 90px;
+	border-radius: 3px;
+	background-image: url("/assets/landingpage/card-surfing-lessons.jpg")
+}
+.boards-page:hover {
+	color: #fff;
+}
+.board-title {
+	margin-top: 5px;
+	margin-left: 10px;
+	display: block;
+	width: 100%;
+	height: 80px;
+}
+
+.board-name {
+	color: white;
+	font-size: 16px;
+    font-weight: 700;
+
+}
+.tile-fade {
+	background-color: rgba(0,0,0,0);
+    width: 21.5%;
+    height: 90px;
+    position: absolute;
+}
+.tile-fade:hover {
+	background-color: rgba(0,0,0,.15);
+}
+.star:before{
+	color: white !important;
+	float:right;
+	color: black;
+    font-size: 12px;
+    font-family: FontAwesome;
+    content:"\f006";
+    z-index: +1;
+}
+
+.star {
+	float: right;
+	margin-bottom: 10px;
+	position: relative;
+	bottom: -40px;
+	margin-right: 20px;
+}
+.star:hover {
+	animation-name: parallel;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes parallel {
+	0% {left:0px;right:0px;}
+	100% {left: 20px; right: 0px;}
+}

@@ -22,6 +22,8 @@ import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { BoardsComponent } from './boards/boards.component';
 import { NavbarComponent } from './boards/navbar/navbar.component';
 import { SidenavComponent } from './boards/sidenav/sidenav.component';
+import { RightPartComponent } from './boards/right-part/right-part.component';
+import { ProjectTemComponent } from './boards/project-tem/project-tem.component';
 
 
 @NgModule({
@@ -42,7 +44,9 @@ import { SidenavComponent } from './boards/sidenav/sidenav.component';
     SignUpComponent,
     BoardsComponent,
     NavbarComponent,
-    SidenavComponent
+    SidenavComponent,
+    RightPartComponent,
+    ProjectTemComponent
   ],
   imports: [
     BrowserModule,

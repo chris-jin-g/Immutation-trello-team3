@@ -1,0 +1,65 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: transparent;
+}
+
+li a {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  color: #172b4d;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+li span {
+  padding-top:1px;
+  text-align: center;
+  height: 30px;
+
+}
+
+li {
+  display: flex;
+}
+/* Change the link color on hover */
+li:hover {
+  background-color: #555;
+  color: white;
+}
+.trello_img:before {
+  color: #172b4d;
+    font-size: 13px;
+    font-family: FontAwesome;
+    content:"\f181";
+}
+.trello_tem:before {
+  color: #172b4d;
+    font-size: 13px;
+    font-family: FontAwesome;
+    content:"\f181";
+}
+.home:before {
+  color: #172b4d;
+    font-size: 13px;
+    font-family: FontAwesome;
+    content:"\f0a2";
+}
+.team_img {
+  float: right;
+}
+.team_img:before {
+    color: #172b4d;
+    font-size: 17px;
+    font-family: FontAwesome;
+    content:"\f067";
+}
+.double_user:before {
+    color: #172b4d;
+    font-size: 17px;
+    font-family: FontAwesome;
+    content:"\f007";
+}

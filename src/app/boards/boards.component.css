@@ -1,0 +1,14 @@
+.user_pic:before {
+	color: #172b4d;
+    font-size: 20px;
+    font-family: FontAwesome;
+    content:"\f006";
+    margin-left: 10px;
+}
+.user_pict:before {
+	color: #172b4d;
+    font-size: 20px;
+    font-family: FontAwesome;
+    content:"\f007";
+    margin-left: 10px;
+}
