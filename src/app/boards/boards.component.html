@@ -1,23 +1,21 @@
 <app-navbar></app-navbar>
 <div style="height: 50px;"></div>
 <div class="row">
-	<app-sidenav></app-sidenav>
-	<div class="col-lg-8">
+	<app-sidenav (featureSelected)="onNavigate($event)"></app-sidenav>
+	<div class="col-lg-8" *ngIf="loadedFeature == 'board'">
 		<ul  style="width: 80%;list-style: none;">
 			<label style="font-weight: bolder;">
 				<span class="user_pic" style="margin-right:10px;"></span>Starred boards</label>
 			<div style="clear: both"></div>
-			<app-project-tem></app-project-tem>
-			<app-project-tem></app-project-tem>
-			<app-project-tem></app-project-tem>
+			<app-project-tem *ngFor="let boardel of boardes" [boardtem]="boardel" [stateString]="state1" (boardSelected)="onBoardSelected(boardel)"></app-project-tem >
 		</ul>
 		<ul  style="width: 80%;list-style: none;">
 			<label style="font-weight: bolder;">
 				<span class="user_pict" style="margin-right:10px;"></span>Personal boards</label>
 			<div style="clear: both"></div>
-			<app-project-tem></app-project-tem>
-			<app-project-tem></app-project-tem>
-			<app-project-tem></app-project-tem>
+			<app-project-tem *ngFor="let boardel of boardes"  [boardtem]="boardel" [stateString] = "state2" (boardSelected)="onBoardSelected(boardel)"></app-project-tem>
+			
 		</ul>
 	</div>
+	<div class="col-lg-8" *ngIf="loadedFeature !== 'board'" >sssss</div>
 </div>

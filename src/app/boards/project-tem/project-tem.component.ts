@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input ,EventEmitter, Output} from '@angular/core';
 import { trigger, style, animate, transition, state} from '@angular/animations';
-
+import {Board} from "../board.model";
 @Component({
   selector: 'app-project-tem',
   templateUrl: './project-tem.component.html',
@@ -23,7 +23,11 @@ import { trigger, style, animate, transition, state} from '@angular/animations';
   ]
 })
 export class ProjectTemComponent implements OnInit {
+  @Input() boardtem: Board; 
+  @Input() stateString : string;
+  @Output() boardSelected = new EventEmitter<void>();
 	state="normal";
+  
   constructor() {}
 
   onCreateAnimation(){
@@ -32,6 +36,12 @@ export class ProjectTemComponent implements OnInit {
 
   onAnimation(){
   	this.state = "normal";
+
+  }
+
+  onChangeColor(){
+    this.boardSelected.emit();
+
   }
 
   ngOnInit() {

@@ -4,7 +4,6 @@
 	margin-right: 15px;	
 	height: 90px;
 	border-radius: 3px;
-	background-image: url("/assets/landingpage/card-surfing-lessons.jpg")
 }
 .boards-page:hover {
 	color: #fff;
@@ -42,19 +41,13 @@
     z-index: +1;
 }
 
+a:hover{
+	text-decoration: none;
+}
 .star {
 	float: right;
 	margin-bottom: 10px;
 	position: relative;
 	bottom: -40px;
 	margin-right: 20px;
-}
-.star:hover {
-	animation-name: parallel;
-	animation-duration: 1s;
-}
-
-@-webkit-keyframes parallel {
-	0% {left:0px;right:0px;}
-	100% {left: 20px; right: 0px;}
 }

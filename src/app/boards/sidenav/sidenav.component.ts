@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-sidenav',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
 
+ @Output() featureSelected = new EventEmitter<string>();	
   constructor() { }
+
+  onSelect(feature: string) {
+  	this.featureSelected.emit(feature);
+  }
 
   ngOnInit() {
   }

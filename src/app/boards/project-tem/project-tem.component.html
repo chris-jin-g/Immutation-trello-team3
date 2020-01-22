@@ -1,11 +1,11 @@
-<li class="boards-page">
-	<span class="tile-fade" (mouseover)="onCreateAnimation()"
-	(mouseleave)="onAnimation()">
-	<a class="board-title" href="">
-		<div class="board-name">
-			Dagger
-		</div>
-		<span class="star" [@spanState]="state"></span>
-	</a>
+<li class="boards-page" [ngStyle]="{'background-image':'url('+ boardtem.imagePath +')'}" *ngIf="stateString == boardtem.stateStr" >
+	<span class="tile-fade"   (mouseover)="onCreateAnimation()"
+	(mouseleave)="onAnimation()" >
+		<a class="board-title" >
+			<div class="board-name">
+				{{ boardtem.name }}
+			</div>
+			<span class="star" [@spanState]="state" (click)="onChangeColor()"></span>
+		</a>
 	</span>
 </li>
